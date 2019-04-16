@@ -1,0 +1,145 @@
+header{
+	display: none; 
+	/*for now*/
+}
+
+body{
+	background:#000;
+}
+
+iframe{
+	width:100%;
+}
+
+.sticky{
+	display: flex;
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  z-index: -1;
+  position: -webkit-sticky;
+  position: sticky;
+
+  img{
+		display: block;
+		-o-object-fit: contain;
+    object-fit: contain;
+	  width: 100%;
+	  height: 100%;
+	}
+}
+
+#topper{
+	color:@white;
+	position: relative;
+
+	.bg-img{
+		filter: blur(10px);
+	  -webkit-filter: blur(10px);
+	  -webkit-transition: filter 2s; /* Safari */
+	  transition: filter 2s;
+		align-items: center;
+	  align-self: flex-start;
+	}
+
+
+	.title{
+		font-family:@sans-serif-bold;
+		width:100%;
+		text-align: center;
+		position: absolute;
+		flex-direction: column;
+		top:0;
+		display:flex;
+		align-items:center;
+		justify-content: center;
+		height:108vh;
+
+		background:rgba(0, 0, 0, 0.42);
+
+
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+	}
+
+	h1{
+		font-size: 5em;
+		line-height: 1;
+		margin:0;
+		font-family:@serif;
+	}
+
+	.deck{
+		max-width: 700px;
+		font-family:@serif;
+		line-height: 1.2;
+
+	}
+}
+
+.spacer {
+  padding: 0 0 100vh;
+	
+	p {
+  	background-color: rgba(255, 255, 255, 0.75);
+  	font-family: Georgia;
+  	font-size: 1.1rem;
+    max-width: 40rem;
+  	line-height: 1.8;
+  	margin: 0 auto;
+  	padding: 1rem;
+	}
+	
+	p:not(:last-of-type) {
+  	margin-bottom: 60vh;
+	}
+}
+
+section{
+	padding:0 0 25vh;
+}
+
+.cover{
+	img{
+		-o-object-fit: cover;
+    object-fit: cover;
+	}
+}
+
+#fourth{
+	background: rgb(0,0,0);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+#fifth{
+	background:#fff;
+}
+
+
+.bg-video{
+
+	width:100%;
+
+	iframe{
+		height:108%;
+	}
+}
+
+
+.inline-asset{
+	max-width: 800px;
+	margin:0 auto 1em;
+
+	.caption{
+		margin-top:0;
+	}
+
+	.credit{
+		color:@gray;
+	}
+}

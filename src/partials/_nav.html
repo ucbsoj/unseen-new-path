@@ -1,0 +1,25 @@
+<header class="">
+  <div class="navigation">
+
+    <a href="//www.sfchronicle.com" target="_blank"><div class="logo-link">UNSEEN</div></a>
+
+    <div class="link social email">
+      <a id="mail-icon" title="Share via email" href="mailto:?subject=<%= project.title %>&body=<%= project.description %>%0A%0A<%= project.url + project.slug %>">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="link social">
+      <a id="facebook-icon" title="Share on Facebook" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<%= project.url + project.slug %>', 'facebook-share-dialog', 'width=626,height=436'); return false;">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+
+    <div class="link social">
+      <a id="twitter-icon" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=<%= project.url + project.slug %>&text=<%= project.twitter_text %>&hashtags=<%= project.hashtag %>">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+
+  </div>
+</header>

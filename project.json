@@ -1,0 +1,30 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "unseen-staging",
+      "path": "new-path"
+    },
+    "live": {
+      "bucket": "unseen-live",
+      "path": "new-path"
+    }
+  },
+
+  "production": false,
+  "year":"2019",
+  "title": "",
+  "description": "",
+  "seo_title": "",
+  "author":"",
+  "date":"2019-04-30",
+  "time":"06:00:00Z",
+  "url": "https://unseen.com",
+  "slug": "/",
+  "twitter_text":"",
+  "hashtag":"",
+  "image": "assets/social.jpg",
+  "sheets": [],
+  "docsID": [""],
+  "ga_code": " ",
+  "favicon_icon": ""
+}

@@ -1,0 +1,45 @@
+<link rel="shortcut icon" href="<%= project.favicon_icon %>" type="image/x-icon">
+		
+		<meta name="description" content="<%= project.description %>">
+
+		<!-- BEGIN TWITTER SUMMARY CARD -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="<%= project.title %>">
+		<meta name="twitter:site" content="@sfchronicle">
+		<meta name="twitter:url" content="<%= project.url + project.slug%>">
+		<meta name="twitter:image" content="<%= project.url + project.slug + project.image %>">
+		<meta name="twitter:description" content="<%= project.description %>">
+
+		<!-- Social sharing meta -->
+		<meta property="og:type" content="WebPage">
+		<meta property="og:title" content="<%= project.title %>">
+		<meta property="og:site_name" content="New Media Journalism at UC Berkeley">
+		<meta property="og:url" content="<%= project.url + project.slug %>">
+		<meta property="og:image" content="<%= project.url + project.slug + project.image %>">
+		<meta property="og:description" content="<%= project.description %>">
+
+		<!-- Schema.org structured data -->
+		<script data-schema="WebPage" type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebPage",
+		  "headline": "<%= project.seo_title %>",
+		  "image": {
+		    "@type": "ImageObject",
+		    "url": "<%= project.url + project.slug + project.image %>"
+		  },
+		  "dateCreated": "<%= project.date + 'T' + project.time %>",
+      "datePublished": "<%= project.date + 'T' + project.time %>",
+		  "publisher": {
+		    "@type": "Organization",
+		    "name": "New Media Journalism at UC Berkeley",
+		    "logo": {
+		      "@type": "ImageObject",
+		      "url": "%= project.favicon_icon %>",
+		      "width": 768,
+		      "height": 79
+		    }
+		  },
+		  "description": "<%= project.description %>"
+		}
+		</script>
