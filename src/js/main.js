@@ -5,3 +5,7 @@ import Flickity from "flickity";
 
 var flky = new Flickity( '.carousel', {});
 
+ var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+
+    player.play();

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <%= t.include("partials/_meta.html", grunt.data.json) %>
   </head>
 
@@ -41,7 +42,7 @@
 
     <section id="second">
       
-      <div class="embed-container"><iframe src="https://player.vimeo.com/video/310197402?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+      <div class="embed-container" id="top-looper"><iframe src="https://player.vimeo.com/video/332581641" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
     </section>
 
@@ -49,20 +50,18 @@
     <section id="third">
 
 
-      <div class="large-img">
-        <div class="sticky cover"><img src="./assets/bg-2.jpg"></div>
-      </div>
+     <div id="graphics-one" class="carousel">
+      <div class="carousel-cell text"><p>1 out of 15 children  born in the United States in 2001 will end up in prison in their lifetime, if incarceration rates remain unchanged. The figure is even worse for racial minorities.</p></div>
+      <div class="carousel-cell"><img src="./assets/photo/gallery1.jpg"></div>
+      <div class="carousel-cell">3</div>
+    </div>
 
     </section>
 
 
     <section id="fourth">
 
-      <div class="carousel">
-  <div class="carousel-cell">1</div>
-  <div class="carousel-cell">2</div>
-  <div class="carousel-cell">3</div>
-</div>
+  
 
     </section>
 
@@ -163,6 +162,7 @@
 
 
   <script src="app.js" async></script>  
+  
   <%= t.include("partials/_footer.html") %>
   <%= t.include("partials/_analytics.html", grunt.data.json) %>
 
