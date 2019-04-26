@@ -8,7 +8,7 @@ var flky = new Flickity( '#graphics-one', {});
 var flky = new Flickity( '#graphics-two', {});
 var flky = new Flickity( '#graphics-three', {});
 
-var iframe = document.querySelector('iframe');
+var iframe = document.querySelector('#top-looper iframe');
 var player = new Vimeo.Player(iframe);
 
 
