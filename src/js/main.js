@@ -8,10 +8,20 @@ var flky = new Flickity( '#graphics-one', {});
 var flky = new Flickity( '#graphics-two', {});
 var flky = new Flickity( '#graphics-three', {});
 
- var iframe = document.querySelector('iframe');
-    var player = new Vimeo.Player(iframe);
+var iframe = document.querySelector('iframe');
+var player = new Vimeo.Player(iframe);
 
-    player.play();
+
+
+$('.top-gif').click(function(){
+    $('#top-looper').css('opacity','1');
+    $('.top-gif').hide();
+    player.on('loaded', function(data) {
+        player.play();
+    });
+})
+
+   
 
 
 
