@@ -112,8 +112,7 @@ section{
 }
 
 #fourth{
-	background: rgb(0,0,0);
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+	margin-bottom:2em;
 }
 
 #fifth{
@@ -148,10 +147,13 @@ section{
 }
 
 .carousel-cell{
-	height:100vh;
 	width: 100%;
 
+	&.graphic{
+		max-width: 1000px;
+	}
+
 	&.text{
-		padding:50vh 0 0;
+		padding:25vh 0 0;
 	}
 }
