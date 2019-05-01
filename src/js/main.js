@@ -2,11 +2,41 @@ import $ from "jquery"; // importing jQuery, you can delete if not needed
 require("./lib/social"); // Twitter intent JS
 import Flickity from "flickity";
 import L from 'leaflet';
+var d3 = require("d3");
 
 
-var flky = new Flickity( '#graphics-one', {});
-var flky = new Flickity( '#graphics-two', {});
-var flky = new Flickity( '#graphics-three', {});
+// d3.selectAll("rect")
+//     .each(function(){
+//         d3.select(this)
+//             .attr("data-width", d3.select(this).attr("width"))
+//             .attr("width", 0);
+//     });
+
+
+// var animationDuration = 1600;
+
+
+var flky1 = new Flickity( '#graphics-one', {});
+var flky2 = new Flickity( '#graphics-two', {});
+var flky3 = new Flickity( '#graphics-three', {});
+
+
+// flky1.on( 'change', function(index ) {
+//   console.log( 'Slide changed to ' + index )
+
+//   if(index == 1){
+//     d3.select("#likelihood")
+//         .selectAll("rect")
+//         .each(function(){
+//             d3.select(this)
+//             .transition()
+//             .duration(animationDuration)//
+//             .attr("width", d3.select(this).attr("data-width"));
+//         });
+        
+//   }
+// });
+
 
 var iframe = document.querySelector('#top-looper iframe');
 var player = new Vimeo.Player(iframe);

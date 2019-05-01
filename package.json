@@ -45,5 +45,8 @@
       "./tasks/lib/browserify-less",
       "./tasks/lib/browserify-text"
     ]
+  },
+  "devDependencies": {
+    "d3": "^5.9.2"
   }
 }
