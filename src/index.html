@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://player.vimeo.com/api/player.js"></script>
     <%= t.include("partials/_meta.html", grunt.data.json) %>
@@ -52,7 +53,7 @@
       <div class="video">
         <div class="top-gif">
           <img src="./assets/photo/gif.gif">
-          <div class="gif-title">Anthony Bustos, from gangs to recovery.<br/>Click to watch video.<br><i class="fa fa-play-circle"></i></div>
+          <div class="gif-title"><span>Anthony Bustos, from gangs to recovery.<br/>Click to watch video.</span><br><i class="fa fa-play-circle"></i></div>
           
         </div>
          <div class="embed-container" id="top-looper"><iframe src="https://player.vimeo.com/video/332581641" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -106,19 +107,28 @@
     <section id="sixth">
      
       <article>
-        <p>Anthony Bustos started to work for Pit Stop last year, about six months after his release from a California state prison. When the 43-year-old gained freedom after 22 years of incarceration, he wanted to open up and talk to people. He says getting the job gave him the opportunity to do that. </p>
+        <p><span class="dropcap">A</span>nthony Bustos started to work for <a href="https://sfpublicworks.wixsite.com/pitstop" target="_blank">Pit Stop</a> last year, about six months after his release from a California state prison. When the 43-year-old gained freedom after 22 years of incarceration, he wanted to open up and talk to people. He says getting the job gave him the opportunity to do that. </p>
 
         <p>Bustos is among the 95% of state prisoners who won&rsquo;t have to spend their lives behind bars, according to the Bureau of Justice. However, the California Department of Corrections and Rehabilitation (CDCR) doesn&rsquo;t track the employment of former prisoners. Only a few small-scale studies show their struggles: In a survey of 101 residents of West Contra Costa County who had been released within the previous 3-18 months in 2011, 78% of respondents were unemployed. Nearly all the respondents with a job were working part-time in construction, auto repair or other forms of manual labor.</p>
 
+<!--         <a href="#"></a>
+ -->
         <p>Convicts are released either into state supervised parole, as was Bustos, or county-level supervision (also knowns as post-release community supervision), according to CDCR. The most serious and violent offenders are released to state parole, and the non-serious, non-violent, and non-sex offenders are released to county-level supervision. Parolees are assigned a parole agent and obligated to follow their agent&rsquo;s instructions. Former inmates who are under county-level supervision are supervised by a local law enforcement agency. Parolees account for half (49.3%) of those released from state prisons in 2017, the most recent year available, according to CDCR. Their average length of stay in prison (4.7 years) is almost four times greater than that for those under county-level supervision (1.3 years). After their release, parolees are required to attend a &ldquo;Parole and Community Team (PACT)&rdquo; meeting to learn about community resources, including employment opportunities. </p>
 
-        <p>Getting a job after many years behind bars is not easy. Many former inmates lack skills and work experience. Some prisons have robust job training programs, but only a handful of prisons make a real investment in that area, says Lonnie Tuck, Regional Director of Oakland&rsquo;s Center for Employment Opportunities (CEO) Office. &ldquo;We have a lot of untapped potential but we don&rsquo;t engage in the vocational training and education that we should to make sure that people come out actually stronger and better as opposed to worse,&rdquo; says Katherine Katcher, founder and executive director of Root &amp; Rebound, a reentry advocacy organization.</p>
+        <p>Getting a job after many years behind bars is not easy. Many former inmates lack skills and work experience. Some prisons have robust job training programs, but only a handful of prisons make a real investment in that area, says Lonnie Tuck, Regional Director of Oakland&rsquo;s Center for Employment Opportunities (CEO) Office.</p>
+
+        <blockquote>
+          &ldquo;We have a lot of untapped potential but we don&rsquo;t engage in the vocational training and education that we should to make sure that people come out actually stronger and better as opposed to worse,&rdquo;
+          <cite>– Katherine Katcher, founder and executive director of Root &amp; Rebound, a reentry advocacy organization.</cite>
+        </blockquote>
 
         <p>A criminal history historically has been a barrier to employment. To address that problem, the Fair Chance Act, which prohibits employers with more than 5 employees from asking about a candidate&rsquo;s conviction history before making a job offer, went into effect in California last year. However, people are still often asked about their convictions in interviews because a lot of employers don&rsquo;t know about the law, says K.C. Taylor, associate director of California Legal Services.</p>
 
         <p>Fields that require occupational licenses - everything from barbers and cosmetologists to insurance sales agents and dental hygienists - have been especially challenging for former inmates. More than 25 percent of the American workforce is in licensed positions, according to the National Conference of State Legislatures. Licensing is a state responsibility. Some state laws prohibit people with criminal records from licensed jobs, or they require &ldquo;good moral character,&rdquo; which has been interpreted to ban individuals with criminal records, according to a report published by the organization. &ldquo;Over the years, we saw how the licensing agencies would routinely deny clients with a criminal record regardless of how old the conviction was, how minor it was, and if it was not related to the type of job,&rdquo; says Vinuta Naik, staff attorney of the East Bay Community Law Center (EBCLC).</p>   
 
-        <p>In California, Gov. Jerry Brown signed into law Assembly Bill No. 2138 (AB 2138) last year. It will prohibit licensing agencies under the Department of Consumer Affairs (DCA) from denying licenses for convictions more than 7 years old unless the conviction was for a serious felony or a financial crime, when it takes effect in 2020. However, the bill only applies to boards under DCA and other boards, such as the Department of Social Services (caregiving), Department of Insurance (insurance agents), emergency medical technician (firefighters and paramedics), and the bar (lawyers), are not covered. &ldquo;The other boards need to change as well to allow a fair chance to all people,&rdquo; says Naik.</p>    
+        <p>In California, Gov. Jerry Brown signed into law Assembly Bill No. 2138 (AB 2138) last year. It will prohibit licensing agencies under the Department of Consumer Affairs (DCA) from denying licenses for convictions more than 7 years old unless the conviction was for a serious felony or a financial crime, when it takes effect in 2020. However, the bill only applies to boards under DCA and other boards, such as the Department of Social Services (caregiving), Department of Insurance (insurance agents), emergency medical technician (firefighters and paramedics), and the bar (lawyers), are not covered. &ldquo;The other boards need to change as well to allow a fair chance to all people,&rdquo; says Naik.</p>   
+
+        <hr> 
 
         <p>Having a job is closely related to whether a former inmate will commit another crime and be returned to prison. &ldquo;If people do not have jobs, if people cannot earn money legitimately, if people cannot take care of their families, if people just feel that they are worthless, then I think you see more crime,&rdquo; says Mohammed Nuru, director of San Francisco Public Works. Nearly half (46.1%) of former inmates are convicted of a felony or misdemeanor offense within three years of their release from state prisons, according to CDCR. </p>
 
@@ -180,7 +190,7 @@
            <div class="carousel-cell photo"><img src="./assets/photo/gallery4.jpg"></div>
         
           </div>
-
+          <div class='caption'>hlajsfl;kjasdlfkjasl d</div>
         </section>
 
         <p>A Pit Stop attendant earns $16 an hour and gets health insurance. The program allows each attendant to work up to a year, unless they are promoted to become a supervisor. &ldquo;We try to look at this job as a stepping stone,&rdquo; says Miller. &ldquo;We really try to move people on, let them get some job history, work history, let them get used to working, have something to put on their resume, and then move onto a place where they can continue to increase their earnings where they can have a pension, retirement, and even better benefits.&rdquo; Hunters Point Family helps its employees get their next job by introducing opportunities, helping with their resumes, and acting as a reference.</p>
