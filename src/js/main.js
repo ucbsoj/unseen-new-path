@@ -2,7 +2,6 @@ import $ from "jquery"; // importing jQuery, you can delete if not needed
 require("./lib/social"); // Twitter intent JS
 import Flickity from "flickity";
 import L from 'leaflet';
-var d3 = require("d3");
 
 
 // d3.selectAll("rect")
