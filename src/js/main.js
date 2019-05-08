@@ -112,9 +112,20 @@ $('.top-gif').click(function(){
 	subdomains: 'abcd',
 	maxZoom: 19
                 }).addTo(mymap);
+
+            var customMarker = L.icon({
+                iconUrl: 'assets/marker.svg',
+                shadowUrl: 'assets/marker-shadow.png',
+                iconSize: [32,32],
+                iconAnchor: [16,32],
+                shadowSize: [33,35],
+                shadowAnchor: [10, 35],
+            });
+
             var markerArray = [];
+
             data.forEach(function(d){
-                marker = new L.marker([d.lat,d.lon])
+                marker = new L.marker([d.lat,d.lon], {icon: customMarker})
                     .bindPopup(L.popup().setContent("<h4>" + d.title + "</h4><p>" + d.description + "</p>"))
                     .addTo(mymap);
                 markerArray.push(marker);
