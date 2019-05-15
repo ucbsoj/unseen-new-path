@@ -699,6 +699,123 @@ article a {
   margin-top: 5px;
   margin: 0 auto;
 }
+#bottom-nav {
+  background: #fff;
+}
+#bottom-nav .bottom-stories {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#bottom-nav .bottom-hr {
+  width: 75%;
+  margin-top: 3em;
+  border-top: 3px solid #333;
+}
+#bottom-nav .bottom-story {
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #bottom-nav .bottom-story {
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+#bottom-nav .bottom-title {
+  font-family: "Upstater";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+#bottom-nav .bottom-deck {
+  font-family: "Source Sans Pro", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+@media (max-width: 480px) {
+  #bottom-nav .bottom-deck {
+    font-size: 12px;
+  }
+}
+#bottom-nav .bottom-top-info {
+  text-align: center;
+  margin-bottom: 1.5em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#bottom-nav .bottom-top-title {
+  font-family: "Upstater";
+  letter-spacing: 1px;
+  font-size: 3em;
+  line-height: 1;
+  padding-left: 20px;
+}
+#bottom-nav .bottom-top-deck {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  max-width: 230px;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 12px;
+}
+@media (max-width: 480px) {
+  #bottom-nav .bottom-top-deck {
+    text-align: center;
+  }
+}
+#bottom-nav .bottom-top-link {
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#bottom-nav .bottom-top-link a {
+  border-bottom: 1px solid ;
+}
+#bottom-nav .bottom-button button {
+  cursor: pointer;
+  font-size: 11px;
+  border: none;
+  padding: 0;
+  color: red;
+  font-family: "Source Sans Pro", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+#bottom-nav .bottom-button button:hover {
+  text-shadow: 1px 1px 1px #ccc;
+}
+#bottom-nav hr {
+  margin: 0 auto;
+  padding: 2em 0 1em;
+  border-top: 2px solid #ccc;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
 footer {
   color: #fff;
   font-family: "Lato", sans-serif;
