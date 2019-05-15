@@ -27735,16 +27735,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _$social_20; // Twitter intent JS
 
 
-// d3.selectAll("rect")
-//     .each(function(){
-//         d3.select(this)
-//             .attr("data-width", d3.select(this).attr("width"))
-//             .attr("width", 0);
-//     });
+(0, _jquery2.default)(document).ready(function () {
 
+    (0, _jquery2.default)(".hamburger").click(function () {
+        (0, _jquery2.default)(".menu").slideToggle("slow", function () {
+            (0, _jquery2.default)(".hamburger").hide();
+            (0, _jquery2.default)(".cross").show();
+        });
+    });
 
-// var animationDuration = 1600;
+    (0, _jquery2.default)(".cross").click(function () {
+        (0, _jquery2.default)(".menu").slideToggle("slow", function () {
+            (0, _jquery2.default)(".cross").hide();
+            (0, _jquery2.default)(".hamburger").show();
+        });
+    });
 
+    (0, _jquery2.default)(".menu ul").click(function () {
+        (0, _jquery2.default)(".menu").slideToggle("slow", function () {
+            (0, _jquery2.default)(".cross").hide();
+            (0, _jquery2.default)(".hamburger").show();
+        });
+    });
+});
 
 var flky1 = new _flickity2.default('#graphics-one', {});
 var flky2 = new _flickity2.default('#graphics-two', {});

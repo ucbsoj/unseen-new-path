@@ -6,30 +6,6 @@ Shims for Flexbox - should work on Safari and IE10+
   display: -ms-flexbox;
   display: flex;
 }
-@font-face {
-  font-family: "Lora";
-  font-weight: normal;
-  font-style: normal;
-  src: url("https://fonts.googleapis.com/css?family=Lora");
-}
-@font-face {
-  font-family: "Lora Bold";
-  font-weight: 700;
-  font-style: normal;
-  src: url("https://fonts.googleapis.com/css?family=Lora:700");
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-  font-style: normal;
-  src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-}
-@font-face {
-  font-family: "Source Sans Pro Bold";
-  font-weight: 700;
-  font-style: normal;
-  src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:700");
-}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -329,8 +305,49 @@ footer::after {
   }
 }
 header {
-  display: none;
-  /*for now*/
+  position: fixed;
+  background: #1D1F24;
+  height: 77px;
+  top: 0;
+  width: 100%;
+  z-index: 3000;
+  display: flex;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  transition: 1s all;
+}
+header .logo-link {
+  flex: 0 0 77px;
+  margin-left: 20px;
+}
+header .logo-link a {
+  font-family: "Upstater";
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+header .link.social {
+  padding: 0;
+}
+header .link.social a {
+  color: #fff;
+}
+header .tagline {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  color: #D8D8D8;
+}
+@media (max-width: 480px) {
+  header .tagline {
+    max-width: 160px;
+    font-size: 11px;
+    margin-top: -5px;
+  }
+}
+header .social-links {
+  position: fixed;
+  right: 0;
 }
 iframe {
   width: 100%;
@@ -356,7 +373,7 @@ iframe {
 #topper {
   color: #fff;
   position: relative;
-  margin-top: 0;
+  margin-top: 77px;
 }
 #topper .bg-img {
   align-items: center;
@@ -595,4 +612,161 @@ article a {
   text-align: center;
   font-family: "Source Sans Pro", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
+}
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.cross {
+  background: none;
+  position: absolute;
+  display: none;
+  top: 18px;
+  right: 0;
+  height: 30px;
+  padding: 7px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.menu {
+  z-index: 1;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  font-family: "Upstater";
+  font-size: 1.5em;
+  width: 100%;
+  background: #f1f1f1;
+  position: fixed;
+  top: 76px;
+  display: none;
+  text-align: center;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  display: block;
+  max-width: 100%;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu li:hover {
+  display: block;
+  background: #ffffff;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #666;
+}
+.menu ul li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #666;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #666;
+}
+.glyphicon-home {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+footer {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 -2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+footer .footer-content {
+  padding: 4em 1em 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  footer .footer-content {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+footer .footer-title {
+  -webkit-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+}
+footer .footer-title .footer-hed {
+  font-family: "Upstater";
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 0;
+}
+footer .footer-title .footer-deck {
+  font-size: 15px;
+}
+footer .footer-about {
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+footer .footer-about h4 {
+  margin: 0;
+}
+@media (max-width: 480px) {
+  footer .footer-about h4 {
+    margin-top: 20px;
+  }
+}
+footer .footer-about a {
+  color: #fff;
+  border-bottom: 2px solid #ccc;
+}
+footer .footer-about-text {
+  font-size: 16px;
+}
+footer .footer-content {
+  margin-bottom: 5em;
+}
+@media (max-width: 480px) {
+  footer .footer-content {
+    margin-bottom: 2em;
+  }
+}
+footer .footer-bottom {
+  font-size: 12px;
+  border-top: 1px solid #a0a0a0;
+  padding: 15px 10%;
+  margin: 0;
 }
