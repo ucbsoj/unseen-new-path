@@ -4,15 +4,30 @@ import Flickity from "flickity";
 import L from 'leaflet';
 
 
-// d3.selectAll("rect")
-//     .each(function(){
-//         d3.select(this)
-//             .attr("data-width", d3.select(this).attr("width"))
-//             .attr("width", 0);
-//     });
+$( document ).ready(function() {
 
+  $( ".hamburger" ).click(function() {
+    $( ".menu" ).slideToggle( "slow", function() {
+      $( ".hamburger" ).hide();
+      $( ".cross" ).show();
+    });
+  });
 
-// var animationDuration = 1600;
+  $( ".cross" ).click(function() {
+    $( ".menu" ).slideToggle( "slow", function() {
+      $( ".cross" ).hide();
+      $( ".hamburger" ).show();
+    });
+  });
+
+  $( ".menu ul" ).click(function() {
+    $( ".menu" ).slideToggle( "slow", function() {
+      $( ".cross" ).hide();
+      $( ".hamburger" ).show();
+    });
+  });
+
+});
 
 
 var flky1 = new Flickity( '#graphics-one', {});
