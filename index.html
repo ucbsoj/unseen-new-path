@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantora+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Puritan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:600i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+		
+		<meta name="description" content="">
+
+		<!-- BEGIN TWITTER SUMMARY CARD -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:site" content="@sfchronicle">
+		<meta name="twitter:url" content="https://unseen.com/">
+		<meta name="twitter:image" content="https://unseen.com/assets/social.jpg">
+		<meta name="twitter:description" content="">
+
+		<!-- Social sharing meta -->
+		<meta property="og:type" content="WebPage">
+		<meta property="og:title" content="">
+		<meta property="og:site_name" content="New Media Journalism at UC Berkeley">
+		<meta property="og:url" content="https://unseen.com/">
+		<meta property="og:image" content="https://unseen.com/assets/social.jpg">
+		<meta property="og:description" content="">
+
+		<!-- Schema.org structured data -->
+		<script data-schema="WebPage" type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "WebPage",
+		  "headline": "",
+		  "image": {
+		    "@type": "ImageObject",
+		    "url": "https://unseen.com/assets/social.jpg"
+		  },
+		  "dateCreated": "2019-04-30T06:00:00Z",
+      "datePublished": "2019-04-30T06:00:00Z",
+		  "publisher": {
+		    "@type": "Organization",
+		    "name": "New Media Journalism at UC Berkeley",
+		    "logo": {
+		      "@type": "ImageObject",
+		      "url": "%= project.favicon_icon %>",
+		      "width": 768,
+		      "height": 79
+		    }
+		  },
+		  "description": ""
+		}
+		</script>
+  </head>
+
+  <body>
+
+  <header>
+  <div class="logo-link"><a href="../">UNSEEN</a></div>
+  <div class="tagline">WORKING IN THE SHADOW OF THE GOLDEN STATE</div>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</header>
+<div class="menu">
+  <ul>
+    <a href="../#projects"><li>PROJECTS</li></a>
+    <a href="../about"><li>ABOUT</li></a>
+  </ul>
+</div> 
+
+
+
+  
+
+
+
+
+    <section id="topper">
+
+      <div class="bg-img sticky"><img src="./assets/photo/coverphoto.jpg"></div>
+      
+      <div class="title">
+        <div role="header">
+          <h1>New Path</h1>
+
+          <div class="deck">How former inmates find their way back into the workforce.
+            <br><br>
+            <div class="bylines">
+              <div class="byline">Text by Saemmool Lee</div>
+              <div class="byline">Videos by Yingshan Deng</div>
+            </div>
+          </div>
+        </div>
+          
+      </div>
+
+      <div class='spacer' id="top-quote">
+        <p>When Anthony Bustos was released from prison last year, he felt like he was a changed man. What he didn’t know was whether he could make his way in a changed world. The 43-year-old had spent 22 years behind bars for murder. When he went in, he said he was “a very antisocial person.” Now he wanted to be “prosocial,” to get a job, to give back to the community.</p>
+        <p>Every year in California, about 35,000 people like Bustos are released from state prisons.  Many of them are among the unseen workforce, taking jobs wherever they can get them, struggling to start over.</p>
+      </div>
+
+    </section>
+
+
+    <section id="second">
+
+      <div class="video">
+        <div class="top-gif">
+          <img src="./assets/photo/gif.gif">
+
+          <!-- CODE FOR THE VIDEO OVERLAY, RENAME THE SRC -->
+          <!-- <video>
+            <source src="./assets/videoname.mp4" type="video/mp4">
+          </video> -->
+
+          <div class="gif-title"><span>Anthony Bustos, from gangs to recovery.<br/>Click to watch video.</span><br><i class="fa fa-play-circle"></i></div>
+          
+        </div>
+         <div class="embed-container" id="top-looper"><iframe src="https://player.vimeo.com/video/332581641" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+         </div>
+      </div>
+      
+     
+
+    </section>
+
+
+    <section id="third">
+
+
+      <div id="graphics-one" class="carousel">
+
+        <div class="carousel-cell text">
+          <p>1 out of 15 children  born in the United States in 2001 will end up in prison in their lifetime, if incarceration rates remain unchanged. The figure is even worse for racial minorities.</p>
+        </div>
+
+        <div class="carousel-cell graphic">
+
+          <img src="./assets/photo/likelihood.png">
+      
+
+          <!-- SVG STARTS HERE -->
+          <!-- <img src="./assets/photo/likelihood.png" alt="descriptions"> -->
+          <!-- <svg id="likelihood" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 600 371" style="enable-background:new 0 0 600 371;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#FFFFFF;}
+              .st1{display:none;fill:none;stroke:#333333;stroke-miterlimit:10;}
+              .st2{display:none;fill:none;stroke:#CCCCCC;stroke-miterlimit:10;}
+              .st3{clip-path:url(#SVGID_2_);fill:none;}
+              .st4{clip-path:url(#SVGID_4_);fill:#EED9BC;}
+              .st5{clip-path:url(#SVGID_6_);fill:none;}
+              .st6{clip-path:url(#SVGID_8_);fill:#EED9BC;}
+              .st7{clip-path:url(#SVGID_10_);fill:none;}
+              .st8{clip-path:url(#SVGID_12_);fill:#EED9BC;}
+              .st9{clip-path:url(#SVGID_14_);fill:none;}
+              .st10{clip-path:url(#SVGID_16_);fill:#B3A38D;}
+              .st11{clip-path:url(#SVGID_18_);fill:none;}
+              .st12{clip-path:url(#SVGID_20_);fill:#B3A38D;}
+              .st13{clip-path:url(#SVGID_22_);fill:none;}
+              .st14{clip-path:url(#SVGID_24_);fill:#B3A38D;}
+              .st15{clip-path:url(#SVGID_26_);fill:none;}
+              .st16{clip-path:url(#SVGID_28_);fill:#DAE1DD;}
+              .st17{clip-path:url(#SVGID_30_);fill:none;}
+              .st18{clip-path:url(#SVGID_32_);fill:#DAE1DD;}
+              .st19{clip-path:url(#SVGID_34_);fill:none;}
+              .st20{clip-path:url(#SVGID_36_);fill:#DAE1DD;}
+              .st21{clip-path:url(#SVGID_38_);fill:none;}
+              .st22{clip-path:url(#SVGID_40_);fill:#A7C6C6;}
+              .st23{clip-path:url(#SVGID_42_);fill:none;}
+              .st24{clip-path:url(#SVGID_44_);fill:#A7C6C6;}
+              .st25{clip-path:url(#SVGID_46_);fill:none;}
+              .st26{clip-path:url(#SVGID_48_);fill:#A7C6C6;}
+              .st27{clip-path:url(#SVGID_50_);fill:none;}
+              .st28{clip-path:url(#SVGID_52_);fill:#ADB2A4;}
+              .st29{clip-path:url(#SVGID_54_);fill:none;}
+              .st30{clip-path:url(#SVGID_56_);fill:#ADB2A4;}
+              .st31{clip-path:url(#SVGID_58_);fill:none;}
+              .st32{clip-path:url(#SVGID_60_);fill:#ADB2A4;}
+              .st33{clip-path:url(#SVGID_62_);fill:none;}
+              .st34{clip-path:url(#SVGID_64_);fill:#5F6553;}
+              .st35{clip-path:url(#SVGID_66_);fill:none;}
+              .st36{clip-path:url(#SVGID_68_);fill:#5F6553;}
+              .st37{clip-path:url(#SVGID_70_);fill:none;}
+              .st38{clip-path:url(#SVGID_72_);fill:#5F6553;}
+              .st39{display:none;fill:#4285F4;}
+              .st40{display:none;fill:#757575;}
+              .st41{display:none;fill:#DB4437;}
+              .st42{display:none;fill:#F4B400;}
+              .st43{fill:#757575;}
+              .st44{font-family:'Oswald-Medium';}
+              .st45{font-size:16px;}
+              .st46{fill:#EED9BC;}
+              .st47{fill:#DAE1DD;}
+              .st48{fill:#ADB2A4;}
+              .st49{font-family:'Oswald-Regular';}
+              .st50{font-size:9px;}
+              .st51{font-size:12px;}
+              .st52{opacity:0.76;fill:none;stroke:#757575;stroke-width:0.5;stroke-miterlimit:10;}
+              .st53{font-size:8px;}
+            </style>
+          <!-- <rect x="0.8" y="20.6" class="st0" width="599" height="345.9"/> 
+            <g id="Layer_3">
+              <path class="st1" d="M442.8,466.1v-536"/>
+              <path class="st2" d="M44.8,309.1h536"/>
+              <path class="st2" d="M44.8,270.1h536"/>
+              <path class="st2" d="M44.8,230.1h536"/>
+              <path class="st2" d="M44.8,190.1h536"/>
+              <path class="st2" d="M44.8,150.1h536"/>
+              <path class="st2" d="M44.8,111.1h536"/>
+              <path class="st2" d="M44.8,71.1h536"/>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_1_" x="76.7"  y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_2_">
+                          <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st3 bar" d="M339.3,119.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h15v17H339.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_3_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_4_">
+                          <use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st4 bar" d="M339.3,119.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h15v17H339.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_5_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_6_">
+                          <use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st5 bar" d="M321.3,203.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h33v17H321.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_7_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_8_">
+                          <use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st6 bar" d="M321.3,203.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h33v17H321.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_9_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_10_">
+                          <use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st7 bar" d="M310.3,287.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h44v17H310.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_11_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_12_">
+                          <use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st8 bar" d="M310.3,287.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h44v17H310.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_13_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_14_">
+                          <use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st9 bar" d="M354.2,119.5v-17h0.5c0.3,0,0.5,0.2,0.5,0.5v16c0,0.3-0.2,0.5-0.5,0.5H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_15_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_16_">
+                          <use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st10 bar" d="M354.8,119.5v-17h0.5c0.3,0,0.5,0.2,0.5,0.5v16c0,0.3-0.2,0.5-0.5,0.5H354.8z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_17_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_18_">
+                          <use xlink:href="#SVGID_17_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st11 bar" d="M354.2,203.5v-17h2c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_19_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_20_">
+                          <use xlink:href="#SVGID_19_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st12 bar" d="M354.7,203.5v-17h2c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_21_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_22_">
+                          <use xlink:href="#SVGID_21_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st13 bar" d="M354.2,287.5v-17h5c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_23_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_24_">
+                          <use xlink:href="#SVGID_23_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st14 bar" d="M354.7,287.5v-17h5c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_25_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_26_">
+                          <use xlink:href="#SVGID_25_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st15 bar" d="M250.3,137.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h104v17H250.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_27_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_28_">
+                          <use xlink:href="#SVGID_27_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st16 bar" d="M250.3,137.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h104v17H250.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_29_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_30_">
+                          <use xlink:href="#SVGID_29_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st17 bar" d="M123.3,221.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h231v17H123.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_31_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_32_">
+                          <use xlink:href="#SVGID_31_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st18 bar" d="M123.3,221.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h231v17H123.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_33_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_34_">
+                          <use xlink:href="#SVGID_33_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st19 bar" d="M101.3,305.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h253v17H101.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_35_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_36_">
+                          <use xlink:href="#SVGID_35_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st20 bar" d="M101.3,305.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h253v17H101.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_37_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_38_">
+                          <use xlink:href="#SVGID_37_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st21 bar" d="M354.2,137.5v-17h6c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_39_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_40_">
+                          <use xlink:href="#SVGID_39_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st22 bar" d="M354.7,137.5v-17h6c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_41_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_42_">
+                          <use xlink:href="#SVGID_41_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st23 bar" d="M354.2,221.5v-17h26c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_43_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_44_">
+                          <use xlink:href="#SVGID_43_"  style="overflow:visible;"/>
+                        </clipPath> 
+                        <path class="st24 bar" d="M354.7,221.5v-17h26c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_45_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_46_">
+                          <use xlink:href="#SVGID_45_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st25 bar" d="M354.2,305.5v-17h42c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_47_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_48_">
+                          <use xlink:href="#SVGID_47_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st26 bar" d="M354.7,305.6v-17h42c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_49_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_50_">
+                          <use xlink:href="#SVGID_49_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st27 bar" d="M325.3,155.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h29v17H325.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_51_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_52_">
+                          <use xlink:href="#SVGID_51_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st28 bar" d="M325.3,155.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h29v17H325.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_53_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_54_">
+                          <use xlink:href="#SVGID_53_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st29 bar" d="M227.3,239.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h127v17H227.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_55_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_56_">
+                          <use xlink:href="#SVGID_55_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st30 bar" d="M227.3,239.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h127v17H227.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_57_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_58_">
+                          <use xlink:href="#SVGID_57_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st31 bar" d="M220.3,323.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h134v17H220.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_59_" x="76.7" y="72.1" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_60_">
+                          <use xlink:href="#SVGID_59_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st32 bar" d="M220.3,323.5c-1.1,0-2-0.9-2-2v-13c0-1.1,0.9-2,2-2h134v17H220.3z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_61_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_62_">
+                          <use xlink:href="#SVGID_61_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st33 bar" d="M354.2,155.5v-17h1.5c0.8,0,1.5,0.7,1.5,1.5v14c0,0.8-0.7,1.5-1.5,1.5H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_63_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_64_">
+                          <use xlink:href="#SVGID_63_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st34 bar" d="M354.7,155.5v-17h1.5c0.8,0,1.5,0.7,1.5,1.5v14c0,0.8-0.7,1.5-1.5,1.5H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_65_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_66_">
+                          <use xlink:href="#SVGID_65_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st35 bar" d="M354.2,239.5v-17h9c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_67_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_68_">
+                          <use xlink:href="#SVGID_67_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st36 bar" d="M354.7,239.6v-17h9c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_69_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_70_">
+                          <use xlink:href="#SVGID_69_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st37 bar" d="M354.2,323.5v-17h15c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.2z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <defs>
+                          <rect id="SVGID_71_" x="353.7" y="-180.9" width="278" height="535.9"/>
+                        </defs>
+                        <clipPath id="SVGID_72_">
+                          <use xlink:href="#SVGID_71_"  style="overflow:visible;"/>
+                        </clipPath>
+                        <path class="st38 bar" d="M354.7,323.5v-17h15c1.1,0,2,0.9,2,2v13c0,1.1-0.9,2-2,2H354.7z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <text transform="matrix(1 0 0 1 37.3041 65.22)" class="st43 st44 st45">Likelihood of being imprisoned in the U.S., depending on when a person was born (%)</text>
+            </g>
+            <rect x="461" y="107" class="st46" width="13.8" height="13.8"/>
+            <rect x="461" y="127.3" class="st47" width="13.8" height="13.8"/>
+            <rect x="461" y="147.5" class="st48" width="13.8" height="13.8"/>
+            <text transform="matrix(1 0 0 1 477.7805 120.8125)" class="st43 st49 st50">White</text>
+            <text transform="matrix(1 0 0 1 477.7805 141.0714)" class="st43 st49 st50">Black</text>
+            <text transform="matrix(1 0 0 1 477.7805 161.3303)" class="st43 st49 st50">Hispanic</text>
+            <text transform="matrix(1 0 0 1 351.4413 342.4613)" class="st43 st44 st50">0</text>
+            <text transform="matrix(1 0 0 1 312.5379 342.6411)" class="st43 st44 st50">5</text>
+            <text transform="matrix(1 0 0 1 271.1404 342.5236)" class="st43 st44 st50">10</text>
+            <text transform="matrix(1 0 0 1 230.5363 342.4613)" class="st43 st44 st50">15</text>
+            <text transform="matrix(1 0 0 1 190.1767 342.4613)" class="st43 st44 st50">20</text>
+            <text transform="matrix(1 0 0 1 150.7999 342.4613)" class="st43 st44 st50">25</text>
+            <text transform="matrix(1 0 0 1 111.0835 342.524)" class="st43 st44 st50">30</text>
+            <text transform="matrix(1 0 0 1 71.1824 342.4613)" class="st43 st44 st50">35</text>
+            <text transform="matrix(1 0 0 1 391.9411 342.6414)" class="st43 st44 st50">5</text>
+            <text transform="matrix(1 0 0 1 430.4495 342.6416)" class="st43 st44 st50">10</text>
+            <text transform="matrix(1 0 0 1 297.4816 97.9419)" class="st43 st44 st51">Male</text>
+            <text transform="matrix(1 0 0 1 364.9613 97.9417)" class="st43 st44 st51">Female</text>
+            <text transform="matrix(1 0 0 1 47.729 132.0591)" class="st43 st49 st50">Born in</text>
+            <text transform="matrix(1 0 0 1 55.329 142.8591)" class="st43 st49 st50">1974</text>
+            <text transform="matrix(1 0 0 1 47.7289 210.0412)" class="st43 st49 st50">Born in</text>
+            <text transform="matrix(1 0 0 1 55.0289 220.8412)" class="st43 st49 st50">1991</text>
+            <text transform="matrix(1 0 0 1 47.7289 293.7482)" class="st43 st49 st50">Born in</text>
+            <text transform="matrix(1 0 0 1 54.0289 304.5482)" class="st43 st49 st50">2001</text>
+            <line class="st52" x1="354.5" y1="323.5" x2="354.5" y2="102.5"/>
+            <text transform="matrix(1 0 0 1 339.1276 117.1754)" class="st0 st49 st53">2.2</text>
+            <text transform="matrix(1 0 0 1 250.6302 135.2)" class="st0 st49 st53">13.4</text>
+            <text transform="matrix(1 0 0 1 324.8483 152.8694)" class="st0 st49 st53">4.0</text>
+            <text transform="matrix(1 0 0 1 321.0136 201.3212)" class="st0 st49 st53">4.4</text>
+            <text transform="matrix(1 0 0 1 123.4344 218.5279)" class="st0 st49 st53">29.4</text>
+            <text transform="matrix(1 0 0 1 227.5363 236.7781)" class="st0 st49 st53">16.3</text>
+            <text transform="matrix(1 0 0 1 309.8966 285.6458)" class="st0 st49 st53">5.9</text>
+            <text transform="matrix(1 0 0 1 101.5224 303.5482)" class="st0 st49 st53">32.2</text>
+            <text transform="matrix(1 0 0 1 220.4999 321.5451)" class="st0 st49 st53">17.2</text>
+            <text transform="matrix(1 0 0 1 358.5172 117.1755)" class="st43 st49 st53">0.2</text>
+            <text transform="matrix(1 0 0 1 365.961 135.1998)" class="st43 st49 st53">1.1</text>
+            <text transform="matrix(1 0 0 1 360.288 152.8694)" class="st43 st49 st53">0.4</text>
+            <text transform="matrix(1 0 0 1 362.2593 201.3212)" class="st43 st49 st53">0.5</text>
+            <text transform="matrix(1 0 0 1 386.407 218.5279)" class="st43 st49 st53">3.6</text>
+            <text transform="matrix(1 0 0 1 368.4306 236.7781)" class="st43 st49 st53">1.5</text>
+            <text transform="matrix(1 0 0 1 364.9613 285.6458)" class="st43 st49 st53">0.9</text>
+            <text transform="matrix(1 0 0 1 401.9384 303.5482)" class="st43 st49 st53">5.6</text>
+            <text transform="matrix(1 0 0 1 375.0087 321.5451)" class="st43 st49 st53">2.2</text>
+            </svg> -->
+            <!-- END SVG -->
+        </div>
+
+        <div class="carousel-cell text">
+          <p>Over the past 35 years, the number of prisoners in the U.S. has grown almost fivefold. The “War on Drugs” declared by President Ronald Reagan in 1982 and President Clinton’s “Tough on Crime” policies contributed to the increase.</p>
+        </div>
+
+        <div class="carousel-cell graphic">
+          <img src="./assets/photo/prisonpopulation.png">
+        </div>
+
+        <div class="carousel-cell text">
+          <p>In 1980, 1 out of 125 children in the United States had a parent in prison or jail. Today it’s 1 out of 28.</p>
+        </div>
+
+        <div class="carousel-cell graphic">
+          <img src="./assets/photo/percentof.png">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="fourth">
+
+    <div class="embed-container"><iframe src="https://player.vimeo.com/video/332581804" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+    </section>
+
+
+    <section id="fifth">
+     
+
+
+
+      <div id="graphics-two" class="carousel">
+        <div class="carousel-cell text"><p>More than 600,000 inmates are released from prison every year, 35,000 in California.</p></div>
+        <div class="carousel-cell graphic"><img src="./assets/photo/releasesof.png"></div>
+        <div class="carousel-cell text"><p>Formerly incarcerated people are more likely to be unemployed and earn less.</p></div>
+        <div class="carousel-cell graphic"><img src="./assets/photo/unemployment.png"></div>
+        <div class="carousel-cell text"><p>About half of former inmates had no earnings a year after their release. The situation remains similar even four years after their release.</p></div>
+        <div class="carousel-cell graphic"><img src="./assets/photo/average.png"></div>
+      </div>
+
+    </section>
+
+
+    <section id="sixth">
+     
+      <article>
+
+       
+
+        <p><span class="dropcap">A</span>nthony Bustos started to work for <a href="https://sfpublicworks.wixsite.com/pitstop" target="_blank">Pit Stop</a> last year, about six months after his release from a California state prison. When the 43-year-old gained freedom after 22 years of incarceration, he wanted to open up and talk to people. He says getting the job gave him the opportunity to do that. </p>
+
+        <p>Bustos is among the 95% of state prisoners who won&rsquo;t have to spend their lives behind bars, according to the Bureau of Justice. However, the California Department of Corrections and Rehabilitation (CDCR) doesn&rsquo;t track the employment of former prisoners. Only a few small-scale studies show their struggles: In a <a href="https://pacinst.org/wp-content/uploads/2013/07/reintegration-employment-final.pdf" target="_blank">survey</a> of 101 residents of West Contra Costa County who had been released within the previous 3-18 months in 2011, 78% of respondents were unemployed. Nearly all the respondents with a job were working part-time in construction, auto repair or other forms of manual labor.</p>
+
+        <div class="inlined-img">
+          <img src="./assets/photo/bustos1.jpg"></div>
+          <div class='photocaption'>Anthony Bustos at Pit Stop in the Mission District.</div>
+          <br>
+
+
+<!--         <a href="#"></a>
+ -->
+        <p>Convicts are released either into state supervised parole, as was Bustos, or county-level supervision (also knowns as post-release community supervision), according to <a href="https://www.cdcr.ca.gov/victim_services/sentencing.html#WHAT_IS_PAROLE" target="_blank">CDCR</a>. The most serious and violent offenders are released to state parole, and the non-serious, non-violent, and non-sex offenders are released to county-level supervision. Parolees are assigned a parole agent and obligated to follow their agent&rsquo;s instructions. Former inmates who are under county-level supervision are supervised by a local law enforcement agency. Parolees account for half (49.3%) of those released from state prisons in 2017, the most recent year available, according to <a href="https://sites.cdcr.ca.gov/research/wp-content/uploads/sites/9/2018/07/Offender-Data-Points-as-of-December-31-2017-1.pdf" target="_blank">CDCR</a>. Their average length of stay in prison (4.7 years) is almost four times greater than that for those under county-level supervision (1.3 years). After their release, parolees are required to attend a &ldquo;Parole and Community Team (PACT)&rdquo; meeting to learn about community resources, including employment opportunities. </p>
+
+
+
+
+        <hr> 
+
+        <p><span class="dropcap">G</span>etting a job after many years behind bars is not easy. Many former inmates lack skills and work experience. Some prisons have robust job training programs, but only a handful of prisons make a real investment in that area, says Lonnie Tuck, Regional Director of <a href="https://ceoworks.org/locations/oakland-ca" target="_blank">Oakland&rsquo;s Center for Employment Opportunities (CEO) Office</a>.</p>
+
+        <blockquote>
+          &ldquo;We have a lot of untapped potential but we don&rsquo;t engage in the vocational training and education that we should to make sure that people come out actually stronger and better as opposed to worse.&rdquo;
+          <cite>– Katherine Katcher, founder and executive director of <a href="http://www.rootandrebound.org/">Root &amp; Rebound</a>, a reentry advocacy organization</cite>
+        </blockquote>
+
+        <p>A criminal history historically has been a barrier to employment. To address that problem, the <a href="https://www.dfeh.ca.gov/resources/frequently-asked-questions/criminalhistoryinfoinemploymentfaqs/" target="_blank">Fair Chance Act</a>, which prohibits employers with more than 5 employees from asking about a candidate&rsquo;s conviction history before making a job offer, went into effect in California last year. However, people are still often asked about their convictions in interviews because a lot of employers don&rsquo;t know about the law, says K.C. Taylor, associate director of California Legal Services.</p>
+
+        <p>Fields that require occupational licenses - everything from barbers and cosmetologists to insurance sales agents and dental hygienists - have been especially challenging for former inmates. More than 25 percent of the American workforce is in licensed positions, according to the <a href="http://www.ncsl.org/bookstore/state-legislatures-magazine/occupational-licensing-can-balance-safety-and-employment-opportunities.aspx" target="_blank">National Conference of State Legislatures</a>. Licensing is a state responsibility. Some state laws prohibit people with criminal records from licensed jobs, or they require &ldquo;good moral character,&rdquo; which has been interpreted to ban individuals with criminal records, according to a <a href="http://www.ncsl.org/Portals/1/Documents/Labor/Licensing/criminalRecords_v06_web.pdf" target="_blank">report</a> published by the organization. &ldquo;Over the years, we saw how the licensing agencies would routinely deny clients with a criminal record regardless of how old the conviction was, how minor it was, and if it was not related to the type of job,&rdquo; says Vinuta Naik, staff attorney of the <a href="https://ebclc.org/" target="_blank">East Bay Community Law Center (EBCLC)</a>.</p>   
+
+        <p>In California, Gov. Jerry Brown signed into law <a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB2138" target="_blank">Assembly Bill No. 2138 (AB 2138)</a> last year. It will prohibit licensing agencies under the Department of Consumer Affairs (DCA) from denying licenses for convictions more than 7 years old unless the conviction was for a serious felony or a financial crime, when it takes effect in 2020. However, the bill only applies to boards under DCA and other boards, such as the Department of Social Services (caregiving), Department of Insurance (insurance agents), emergency medical technician (firefighters and paramedics), and the bar (lawyers), are not covered. &ldquo;The other boards need to change as well to allow a fair chance to all people,&rdquo; says Naik.</p>   
+
+        <hr> 
+
+        <p><span class="dropcap">H</span>aving a job is closely related to whether a former inmate will commit another crime and be returned to prison.</p>
+
+        <blockquote>
+         &ldquo;If people do not have jobs, if people cannot earn money legitimately, if people cannot take care of their families, if people just feel that they are worthless, then I think you see more crime.&rdquo;
+         <cite>–Mohammed Nuru, director of San Francisco Public Works</cite></blockquote>
+
+          <p>Nearly half (46.1%) of former inmates are convicted of a felony or misdemeanor offense within three years of their release from state prisons, according to <a href="https://sites.cdcr.ca.gov/research/wp-content/uploads/sites/9/2019/01/2018-Recidivism-Report.pdf" target="_blank">CDCR.</a> </p>
+
+        <p>David Harding, a professor of sociology at UC Berkeley who studies social and economic reintegration of former prisoners, says that &ldquo;social connections,&rdquo; such as a job referral or support from family, have a big impact on former inmates&rsquo; employment. &ldquo;In our study, the only people who were successful at not just finding a job but a job that paid a living wage and had a career ladder attached to it were people who were able to get access to those jobs through their social connections,&rdquo; he says. &ldquo;But of course, most prisoners are coming from families that don&rsquo;t have those kinds of economic and social resources.&rdquo;</p>
+
+        <p>A transitional job is useful because it helps former inmates rebuild their lives, Harding says. &ldquo;Certainly, people coming out of prison are really eager to work,&rdquo; he says. &ldquo;People are really looking for a way to construct meaning for their lives and feel like they are contributing in some ways. I think in that sense, it&rsquo;s useful just for that.&rdquo; </p>
+
+        <p>There are several programs that offer transitional jobs to former inmates. The <a href="https://ceoworks.org/" target="_blank">Center for Employment Opportunities (CEO)</a> offers enrolled participants a short-term transitional job where they work up to 4 days a week and earn daily income. During that time, participants work with CEO regularly to prepare job applications, and move on to full-time employment. The participants were 52% more likely to be employed than their counterparts in the comparison group, according to the organization&rsquo;s 12-month post-enrollment <a href="https://ceoworks.org/assets/images/CEO-Improving-Long-Term-Employment_030719.pdf" target="_blank">evaluation.</a> </p>
+
+        <p>Other organizations run transitional jobs program throughout the country, such as <a href="https://saferfoundation.org/How-We-Help/Workforce-Development/Transitional-Employment" target="_blank">Safer Foundation</a> in Illinois and <a href="https://www.projectreturninc.org/" target="_blank">Project Return</a> in Tennessee.</p>
+
+        <hr>
+
+        <p><span class="dropcap">O</span>ne program designed to help inmates and meet a community need is the Pit Stop program in San Francisco.</p>    
+
+        <p>San Francisco Public Works partnered with two nonprofit organizations to staff the city&rsquo;s public toilets as part of a workforce development program. <a href="http://hunterspointfamily.org/" target="_blank">Hunters Point Family</a>, a nonprofit organization that provides various programs including workforce development, staffs 24 locations, and <a href="https://lowerpolkcbd.org/" target="_blank">Lower Polk Community Benefit District</a>, a nonprofit organization that works to improve the lives of people in the Lower Polk community of San Francisco, staffs one.</p>
+
+        <div class="map">
+          <h2>The location of  Pit Stop toilets in San Francisco. </h2>
+          <div id="mapid"></div> 
+          <div class="caption">The “Pit Stop,” 25 public toilets run by San Francisco Public Works, largely hires former inmates as paid attendants to keep the toilets clean and safe, as well as build relationships with the community.<span class="credit">Source: San Francisco Public Works</span></div>
+        </div>
+
+        <p>The Pit Stop program began in 2014 as a six-month pilot project at three locations in the Tenderloin after a community budget hearing. Students from the <a href="https://demarillac.org/" target="_blank">De Marillac Academy</a> said that they were tired of having to navigate around human waste on their way to and from school in the Tenderloin. Nuru convened a meeting with his staff, and they came up with the idea for Pit Stop. It aimed not only to solve the community problem but also to create a pipeline for people trying to re-enter the workforce. </p>
+
+        <p>The program was started with other nonprofit organizations to staff the toilets with people from different backgrounds. Then San Francisco Public Works formed a partnership with Hunters Point Family in 2016 as the program grew, and former inmates began to be hired. It now operates at 25 locations with an annual budget of $3.1 million, and about 150 employees. &ldquo;The partnership with the Hunters Point Family is a very powerful partnership for the Public Works department in a sense that they are able to help us hire a lot of these individuals who try to change their lives,&rdquo; says Nuru. &ldquo;We provide the funding, we provide the equipment, they provide the people.&rdquo;  </p>
+      </article>
+
+    </section>
+
+
+
+    <section id="eight">
+     
+      <article>
+        <p>Most of the Pit Stop attendants are former inmates, mostly from state prisons, with some from federal prisons. Hunters Point Family recruit the employees from halfway houses or meetings that former inmates attend. The organization usually hires &ldquo;lifers,&rdquo; people who were sentenced to life in prison, except sex offenders or people who had committed crimes against women and children. A lot of the people they hire committed crimes when they were teenagers, according to the organization.</p>
+
+        <section id="seven">
+      
+          <div id="graphics-three" class="carousel">
+        
+            <div class="carousel-cell photo"><img src="./assets/photo/gallery1.jpg"></div>
+            <div class="carousel-cell photo"><img src="./assets/photo/gallery2.jpg"></div>
+            <div class="carousel-cell photo"><img src="./assets/photo/gallery3.jpg"></div>
+           <div class="carousel-cell photo"><img src="./assets/photo/gallery4.jpg"></div>
+        
+          </div>
+          <br>
+          <div class='caption'>Pit Stop attendants Lovett Milton, Yvonne Michael, Derrick Engelman, and Anthony Bustos (from left to right).</div>
+        </section>
+
+        <p>Bustos is one of the lifers who committed a crime in his younger days. He joined gangs at the age of 15. &ldquo;I didn&rsquo;t have the love I thought I&rsquo;d need at home, and I found it in a gang,&rdquo; he says. &ldquo;It was there, I just didn&rsquo;t want that type of love. I was looking for it in the gang.&rdquo; When he was 19, he was heavily involved in street gangs, selling and doing drugs, drinking alcohol, and committing crimes. &ldquo;I shot and murdered at the time another gang member,&rdquo; he says. &ldquo;I objectified him for so long by calling him a gang member. It&rsquo;s important for me to say that he was someone&rsquo;s child, someone&rsquo;s precious angel, and he didn&rsquo;t deserve what I did to him.&rdquo; Bustos was sentenced to 26 years to life for second-degree murder and assault with a deadly weapon.</p>
+
+        <hr>
+
+
+
+        <p><span class="dropcap">A</span>s part of the screening process, applicants are asked questions like &ldquo;What&rsquo;s the situation that you&rsquo;ve been in with conflict that you felt overwhelmed by, and how did you handle it&rdquo; that show their ability to handle stressful situations.</p>
+
+        <blockquote> &ldquo;What we&rsquo;re looking for is to see how much work people have done on themselves. We are talking about people who really done a lot of work around it, and who are hungry to get back into society who really haven&rsquo;t had the chance outside of this program to integrate back into, really create a stable foundation to begin to build their lives.&rdquo; <cite>–Lena Miller, founder and co-Executive Director of Hunters Point Family</cite></blockquote>
+
+        <p>For Bustos, the turning point came in 2007, when he was caught making alcohol in prison. &ldquo;I started to look at my life. I&rsquo;m a lifer, I&rsquo;m stuck in prison. I was like &lsquo;do I really want to live like this every day?&rsquo;&rdquo; He began to attend Alcoholics Anonymous meetings, which helped him recover from his drinking problem in prison. He started to follow the &ldquo;<a href"https://www.alcohol.org/alcoholics-anonymous/" target="_blank">12 Steps</a>&rdquo; program, a set of principles to guide former alcoholics on how to tackle the problems caused by alcohol addiction, how to make amends, and how to continue in their new lives. </p>
+
+        <p>He learned that he could connect with people better sober than when he was drunk. He was finally able to have real conversations and establish a real relationship with his parents. &ldquo;I knew about their past and lives, then I started to just really see or understand how nurturing my mother was,&rdquo; he says. But by then he didn&rsquo;t have much time with his mother who had dementia. &ldquo;That&rsquo;s something I&rsquo;m kind of ashamed that I didn&rsquo;t establish that before her dementia,&rdquo; says Bustos. His mother passed away when he was in prison. &ldquo;I don&rsquo;t think I really ever properly digested those feelings about my mother,&rdquo; he says. &ldquo;I figured another time would come when I can sit down and talk about it. I think it&rsquo;s important. I just haven&rsquo;t because since I&rsquo;ve been out, I&rsquo;m always with goals, work work work, and try to help people out.&rdquo;</p>
+
+        <div class="inlined-img">
+          <img src="./assets/photo/bustos2.jpg"></div>
+          <div class='photocaption'>Anthony Bustos' hand, preparing for work at Pit Stop.</div>
+
+          <br>
+
+        <p>On the street in the Mission District, Bustos meets people who have struggles similar to the ones he had, alcoholics and drug addicts. He knows how to talk to them and calm them down, he says. &ldquo;That&rsquo;s why they have us out here, because I understand addiction,&rdquo; he says. &ldquo;I understand a person who suffers from drugs. I understand what they are going through.&rdquo;</p>
+
+        <p>The role of the attendant is not just making sure the toilets are clean and safe. He&rsquo;s also supposed to build relationships with the community. Bustos always greets clients by saying, &ldquo;How are you doing?&rdquo; When strangers look at the facility, he introduces it, explaining, &ldquo;It&rsquo;s a public restroom!&rdquo; He also gives directions to passersby when they ask. &ldquo;To me, it&rsquo;s more than just monitoring and maintaining the station,&rdquo; he says. &ldquo;It&rsquo;s assisting the public and talking to them.&rdquo;</p>
+
+        <p> &ldquo;It&rsquo;s not prestigious to become a bathroom attendant,&rdquo; says Nuru. &ldquo;But it does bring the money, it does allow you to talk to people, it does allow you to reconnect.&rdquo; </p>
+
+        <p>The Pit Stop attendants get training for two full days before starting to work. One day is orientation in a classroom setting, and the other is on-site training at the toilet. Everybody goes through the training. After they start working, they get 24 hours of training a quarter where they learn about workforce development, customer service, de-escalation, CPR, career development, financial literacy, and more. Currently, the workforce consists of about 140 men and 9 women, including 5 supervisors (4 men and 1 woman).</p>
+
+        <hr>
+
+        <p><span class="dropcap">A</span> Pit Stop attendant earns $16 an hour and gets health insurance. The program allows each attendant to work up to a year, unless they are promoted to become a supervisor. &ldquo;We try to look at this job as a stepping stone,&rdquo; says Miller. &ldquo;We really try to move people on, let them get some job history, work history, let them get used to working, have something to put on their resume, and then move onto a place where they can continue to increase their earnings where they can have a pension, retirement, and even better benefits.&rdquo; Hunters Point Family helps its employees get their next job by introducing opportunities, helping with their resumes, and acting as a reference.</p>
+
+        <p>&ldquo;To me, it&rsquo;s about when these people do come out, help them get on their feet, build on their resume, let them know they got a job when they come out,&rdquo; says Derrick Engelman, a Pit Stop supervisor who works with Bustos. &ldquo;At first, to my understanding, nobody wanted to hire all these people coming out until they started to see how they work at Pit Stop.&rdquo; Now some lifers who worked at Pit Stop get two job offers because people know they are hard workers, he says. </p>
+
+        <div class="inlined-img">
+          <img src="./assets/photo/bustos3.jpg"></div>
+          <div class='photocaption'>Anthony Bustos at Pit Stop in the Mission District.</div>
+          <br>
+
+        <p>Hunters Point Family had employed about 180 people in the Pit Stop program by the end of last year. Eighty-two percent found another job after leaving the program. The jobs are typically customer service, janitorial, construction, and security, according to the organization. </p>
+
+        <p>&ldquo;I&rsquo;m giving back to my community I think, by working here,&rdquo; says Bustos. He needs to move on to a better paying job eventually, but he will always do something that&rsquo;s giving back to his community, he says. &ldquo;I was in prison for such a long time,&rdquo; says Bustos. &ldquo;The people, they pay their taxes&mdash;they basically paid my cost of living for all those years. So, I have to do my part to show, giving back to community.&rdquo;</p>
+
+        <p>Connecting former inmates to jobs has ripple effects. In the state of New York, over 18,000 former inmates have been hired through the &ldquo;<a href="https://www.alcohol.org/alcoholics-anonymous/" target="_blank">Work for Success</a>&rdquo; initiative that has matched former inmates to employers since it was launched in 2012. The program aims to reduce recidivism by reducing poverty and joblessness. The program&rsquo;s non-profit partners offer industry-specific job training, and the state Department of Labor works with employers to create specific training programs.</p>    
+        <p>&ldquo;The way our criminal justice system is supposed to work is that you commit a crime and the judge gives you a sentence, and really that should be your punishment,&rdquo; says Harding. &ldquo;But we are in a situation now, where it&rsquo;s like people have done their time and they are still being punished later through all these other kinds of collateral consequences, stigma, and denial of opportunities that other people get.&rdquo;</p>
+
+        <p>&ldquo;More and more people have criminal convictions,&rdquo; says Tuck. &ldquo;We need to provide these people with a way of taking care themselves and their children so they don&rsquo;t recidivate and they don&rsquo;t go back to prison.&rdquo; </p>
+      </article>
+
+    </section>
+
+    <section>
+       <div class="embed-container"><iframe src="https://player.vimeo.com/video/332581764" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    </section>
+
+
+  
+
+
+
+
+
+
+  <script src="app.js" async></script>  
+  
+  <div id="bottom-nav">
+        <hr class="bottom-hr" />
+        <div class="bottom-top-info">
+          <div class="bottom-top-title">UNSEEN</div>
+          <div class="bottom-top-deck">WORKING IN THE SHADOW OF THE GOLDEN STATE</div>      
+          <div class="bottom-top-link"><a href="../">Main Site</a></div>
+        </div>  
+        <div class="bottom-stories">
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../uneven-ground"><img src="./assets/footer/uneven-ground.jpg"></a></div>
+            <div class="bottom-title">Uneven Ground</div>
+            <div class="bottom-deck">Women make up just 3% of lucrative male dominated construction jobs – Gender based harassment and discrimination has kept their numbers virtually unchanged half a century after affirmative action.</div>
+            <div class="bottom-button"><a href="../uneve-ground">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../pennies-per-hour"><img src="./assets/footer/pennies-per-hour.jpg"></a></div>
+            <div class="bottom-title">Pennies per Hour</div>
+            <div class="bottom-deck">Most California state prisoners hold jobs that maintain prison facilities for as low as 8 cents an hour. The roles are cost-effective for the state, but critics say they don’t prepare inmates for life on the outside.</div>
+            <div class="bottom-button"><a href="../pennies-per-hour">VIEW PROJECT</a></div>
+          </div>
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../new-path"><img src="./assets/footer/newpath.jpg"></a></div>
+            <div class="bottom-title">NEW PATH</div>
+            <div class="bottom-deck">More than 600,000 inmates are released from prison every year, 35,000 in California. Most are seeking a regular job that can keep a roof over their head - a challenge that’s not easy to overcome.</div>
+            <div class="bottom-button"><a href="../new-path">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../smoke-and-mirrors"><img src="./assets/footer/cannabis.jpg"></a></div>
+            <div class="bottom-title">SMOKE AND MIRRORS</div>
+            <div class="bottom-deck">Cannabis legalization in California is a mess. Tax revenues are lower than expected, the illegal market is thriving and workers on the Central Coast are weighing the benefits and fears of working in a newly permitted industry.</div>
+            <div class="bottom-button"><a href="../smoke-and-mirrors">VIEW PROJECT</a></div>
+          </div>
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../stolen"><img src="./assets/footer/stolen.jpg"></a></div>
+            <div class="bottom-title">STOLEN</div>
+            <div class="bottom-deck">In California, wage theft is underreported, underenforced, and costs workers billions of dollars every year. But, you’re more likely to be prosecuted for stealing a sandwich.</div>
+            <div class="bottom-button"><a href="../stolen">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../second-class"><img src="./assets/footer/second-class.jpg"></a></div>
+            <div class="bottom-title">SECOND CLASS</div>
+            <div class="bottom-deck">California’s almost 2 million undocumented workers face a disproportionately high risk of being killed or injured on the job despite state laws designed to protect them.</div>
+            <div class="bottom-button"><a href="../second-class">VIEW PROJECT</a></div>
+          </div>
+
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../on-the-line"><img src="./assets/footer/ontheline.jpg"></a></div>
+            <div class="bottom-title">ON THE LINE</div>
+            <div class="bottom-deck">California has some of the nation’s most progressive recycling policies and goals, but the industry’s workers face hazardous conditions—and global market forces are adding to their strain.</div>
+            <div class="bottom-button"><a href="../on-the-line">VIEW PROJECT</a></div>
+          </div>
+          
+          <div class="bottom-story">
+            <div class="bottom-img"><a href="../dirty-business"><img src="./assets/footer/db.jpg"></a></div>
+            <div class="bottom-title">DIRTY BUSINESS</div>
+            <div class="bottom-deck">Workers in California’s waste industry labor far beyond our shores. Plastic recyclers in Minh Khai, Vietnam wrestle with the blessings and curses of an empire built on our trash.</div>
+            <div class="bottom-button"><a href="../dirty-business">VIEW PROJECT</a></div>
+          </div>
+          
+
+        </div>
+      </div>
+
+    <footer class="nav-bottom">
+      <div class="footer-content">
+
+      	<div class="footer-title">
+      		<div class="footer-hed">UNSEEN</div>
+      		<div class="footer-deck">WORKING IN THE SHADOW OF THE GOLDEN STATE</div>
+      	</div>
+
+
+      	<div class="footer-about">
+      		<h4><a href="../about">About</a></h4>
+      		<div class="footer-about-text">
+           "Unseen" is a multimedia project produced by 2018-2019 second-year students in the new media program at UC Berkeley's Graduate School of Journalism.
+      		</div>
+      	</div>
+        
+     	</div>
+
+	    <div class="footer-bottom">
+	  		<div class="footer-bottom-text">© UNSEEN 2019. All Rights Reserved UC BERKELEY GRADUATE SCHOOL OF 	JOURNALISM</div>
+	  	</div>
+	  	
+  	</footer>
+
+
+  <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', ' ', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+</body>
+</html>
