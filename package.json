@@ -26,7 +26,7 @@
     "flickity": "^2.2.0",
     "gh-pages": "^2.0.1",
     "google-spreadsheets": "^0.5.1",
-    "googleapis": "^18.0.0",
+    "googleapis": "^39.1.0",
     "grunt": "^1.0.0",
     "grunt-contrib-connect": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
